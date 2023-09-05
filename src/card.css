@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #f03a47;
+  font-family: monospace;
+}
+
+main {
+  height: 50vh;
+  width: clamp(50vw, 50vw, 70vw);
+  border: 5px solid #570000;
+  -webkit-box-shadow: 0 5px 15px -3px #f03a47;
+          box-shadow: 0 5px 15px -3px #f03a47;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 80% auto;
+      grid-template-rows: 80% auto;
+  -webkit-transition: background-color 100ms ease;
+  transition: background-color 100ms ease;
+}
+
+h1 {
+  grid-column: 1/-1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 5em;
+}
+
+button {
+  color: #f03a47;
+  background-color: white;
+  font-size: 3.5em;
+  font-weight: bold;
+  font-family: inherit;
+  outline: none;
+  border: none;
+  -webkit-transition: color, background-color 300ms ease;
+  transition: color, background-color 300ms ease;
+}
+
+button:not(:first-of-type) {
+  border-left: 1px solid #f03a47;
+}
+
+button:nth-of-type(2) {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+button:hover {
+  color: white;
+  background-color: #f03a47;
+}
+
+button:focus {
+  border: 2px solid #f03a47;
+}
+/*# sourceMappingURL=card.css.map */
